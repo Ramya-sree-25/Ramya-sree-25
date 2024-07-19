@@ -1,0 +1,12 @@
+#counting no of digits in a number
+def count_digits(num):
+    if num <10:
+        return 1 
+    count = 0
+    while num != 0:
+        num //= 10
+        count += 1
+    return count
+num=int(input("sample input "))  
+print(count_digits(num))
+
