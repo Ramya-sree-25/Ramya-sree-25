@@ -1,0 +1,23 @@
+def max_money_to_rob(houses, n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return houses[0]
+    
+    dp = [0] * (n + 1)
+    dp[1] = houses[0]
+    
+    for i in range(2, n + 1):
+        dp[i] = max(dp[i - 1], dp[i - 2] + houses[i - 1])
+    
+    return dp[n]
+
+# Reading input
+size = int(input('enter no of houses ').strip())
+houses = list(map(int, input('enter money of each house').strip().split()))
+
+# Calculating maximum amount of money that can be robbed
+max_money = max_money_to_rob(houses, size)
+
+# Printing the result
+print(max_money)
