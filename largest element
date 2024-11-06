@@ -1,0 +1,6 @@
+l1=[12,4,123,67,999]
+lar=l1[0]
+for i in l1:
+    if i>lar:
+        lar=i
+print(i)
