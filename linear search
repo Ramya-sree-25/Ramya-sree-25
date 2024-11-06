@@ -1,0 +1,7 @@
+l1=[1,2,4,89,35]
+search=89
+for i in range(len(l1)):
+    if (l1[i]==search):
+        print("element found",i)
+    else:
+        print("not found")
