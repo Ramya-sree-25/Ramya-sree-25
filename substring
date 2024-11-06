@@ -1,0 +1,6 @@
+string="hello world"
+substr='wor'
+if substr in string:
+    print("substring found ")
+else:
+    print("not found")
