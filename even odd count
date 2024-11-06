@@ -1,0 +1,10 @@
+l1=[1,2,3,5,99,66,77,343,2324,6,258]
+counte=0
+counto=0
+for i in l1:
+    if i%2==0:
+        counte+=1
+    else:
+        counto+=1
+print("counte",counte)
+print("counto",counto)
