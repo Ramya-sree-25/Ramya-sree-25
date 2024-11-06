@@ -1,0 +1,9 @@
+s1=input("enter a string1: ")
+s2=input("enter a string2: ")
+if(len(s1)==len(s2)):
+    if(sorted(s1)==sorted(s2)):
+        print("strings are Anagram")
+    else:
+        print("strings are Not Anagram")
+else:
+    print("lengths are not equal")
