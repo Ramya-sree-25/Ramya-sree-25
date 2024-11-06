@@ -1,0 +1,6 @@
+l1=[12,4,123,67,999]
+y=[]
+for i in range(len(l1)-1,-1,-1):
+    y.append(l1[i])
+print(y)
+print(len(l1))
